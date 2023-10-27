@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     $('#source-text').on('input', function () {
         clearTimeout(clearTimer); // Clear any previous timers
-        clearTimer = setTimeout(translateText, 300); // Delay before translating
+        clearTimer = setTimeout(translateText, 200); // Delay before translating
     });
 
     $('#source-lang, #target-lang').change(function () {
