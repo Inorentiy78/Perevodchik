@@ -9,7 +9,7 @@
     <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </head>
 <body>
-    <h1>Простой переводчик</h1>
+    <h1> Переводчик</h1>
     <form id="myForm" action="/translate" method="post">
         <select class="input-field" id="source-lang" name="source_lang">
            <option value="ru">Русский</option>
@@ -116,7 +116,8 @@
             <option value="he">Ивритский</option>
         </select>
         <textarea id="source-text" name="source_text" placeholder="Введите текст для перевода"></textarea>
-        
+    </form>
+    <form id="myForm1">
         <select class="target-lang" id="target-lang" name="target_lang">
             <option value="ru">Русский</option>
             <option value="kk">Казахский</option>
@@ -223,8 +224,12 @@
         </select>
     
         
-    </form>
-    <div id="translation-result"></div>
+    
+    <div class="translation-result" id="translation-result" >
+        <div class="text1">ваш перевод</div>
+    </div>
+        </form>
+
 
     <script>
         $(document).ready(function () {
