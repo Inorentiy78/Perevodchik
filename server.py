@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import requests
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -23,5 +23,5 @@ def translate():
 
     return jsonify({'translation': translation})
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
