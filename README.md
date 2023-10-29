@@ -13,7 +13,7 @@
 2. У нас сайт, поэтому нужно установить библиотеку Flask командой .\venv\Scripts\pip.exe install flask
 3. после необходимо также установить requests через ту же команду .\venv\Scripts\pip.exe install requests
 4. после в уже найденные папки подставляем соответствующий код и вызываем сайт через команду .\venv\Scripts\python.exe server.py
-5. после чего в терминале нужно выйти на следующее
+5. после чего в терминале должно выйти следующее
  * Serving Flask app 'server'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
